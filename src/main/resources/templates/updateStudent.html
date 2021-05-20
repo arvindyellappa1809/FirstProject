@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Student Updation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<form action="updateStud" method="post">
+		<pre>
+			Id : <input type="text" name="id" th:value="${student2.id}" readonly>
+			Name : <input type="text" name="name" th:value="${student2.name}">
+			Description : <input type="text" name="desc" th:value="${student2.desc}">
+			Type :Vaccinated<input type="radio" name="type" value="VACCINATED" th:field="*{student2.type}">
+			Not-Vaccinated<input type="radio" name="type" value="NOT-VACCINATED" th:field="*{student2.type}">
+			<input type="submit" value="save">
+		</pre>
+	</form>
+
+
+</body>
+
+</html>	
